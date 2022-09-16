@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Generators</h1>
+
+<div id="generators">
+  <% @generators.each do |generator| %>
+    <%= render generator %>
+    <p>
+      <%= link_to "Show this generator", generator %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New generator", new_generator_path %>
